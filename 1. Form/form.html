@@ -1,0 +1,109 @@
+<!-- pembuka file html -->
+<html>
+    <!-- pembuka tag head yang berfungsi sebagai kepala dari dokumen html -->
+    <head>
+        <!-- tag title berfungsi sebagai judul dari dokumen html yang kita buat -->
+        <title>Form Html</title>
+
+    </head>
+    <!-- penutup tag head -->
+    <!-- pembuka tag body yang berfungsi untuk menampilkan isi dokumen html kita -->
+    <body>
+        <!-- form berfungsi untuk membuat untuk menerima inputan dari user -->
+        <!-- action berfungsi ketika tombol di form tersebut ditekan akan di exsekusi oleh server -->
+        <!-- method post adalah metode untuk mengirim data pada form dengan metode post -->
+        <form action="" method="POST">
+            <h1>Belajar Form</h1>
+            <!-- tag table berfungsi untuk membuat table pada dokumen html -->
+            <table>
+                <!-- tag tr berfungsi untuk membuat baris pada table -->
+                <tr>
+                    <!-- fungsi dari td adalah membuat kolom pada sebuah baris -->
+                    <td>Nama</td><td>:</td><td>
+                        <!-- input type text adalah bagian dari form yang berfungsi untuk menerima inputan berupa karakter -->
+                        <!-- tag name pada input berfungsi untuk menamai textbox yang kita buat -->
+                        <!-- placeholder berfungsi untuk menampilkan penamaan -->
+                        <!-- required berfungsi agar form yang di required harus diisi -->
+                        <input name="nama" type="text" placeholder="Masukkan Nama anda" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td><td>:</td><td>
+                        <!-- input type email adalah bagian dari form yang berfungsi untuk menerima inputan berupa email -->
+                        <!-- tag name pada input berfungsi untuk menamai textbox yang kita buat -->
+                        <!-- placeholder berfungsi untuk menampilkan penamaan -->
+                        <!-- required berfungsi agar form yang di required harus diisi -->
+                        <input name="email" type="email" placeholder="Masukkan email anda" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td><td>:</td><td>
+                        <!-- input type password adalah bagian dari form yang berfungsi untuk menerima inputan berupa password sehingga password yang kita masukkan tidak muncul -->
+                        <!-- tag name pada input berfungsi untuk menamai textbox yang kita buat -->
+                        <!-- placeholder berfungsi untuk menampilkan penamaan -->
+                        <!-- required berfungsi agar form yang di required harus diisi -->
+                        <input name="password" type="password" placeholder="masukkan password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi</td><td>:</td><td>
+                        <!-- input type checkbox adalah bagian dari form yang berfungsi untuk menerima inputan berupa pilihan yang lebih dari satu -->
+                        <!-- tag name pada input berfungsi untuk menamai textbox yang kita buat -->
+                        <input name="hobi" type="checkbox" value="Sepak Bola" />Sepak Bola <input name="hobi" type="checkbox" value="Voli" />Voli<br>
+                        <input name="hobi" type="checkbox" value="Makan" />Makan <input name="hobi" type="checkbox" value="Tidur" />Tidur
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td><td>:</td><td>
+                        <!-- input type radio adalah bagian dari form yang berfungsi untuk menerima inputan berupa pilihan yang hanya memilih salah satu saja -->
+                        <!-- tag name pada input berfungsi untuk menamai textbox yang kita buat -->
+                        <!-- required berfungsi agar form yang di required harus diisi -->
+                        <!-- value merupakan isi dari form yang kita pilih -->
+                        <input name="hobi" type="radio" value="Laki Laki" required/>Laki Laki <input name="hobi" type="radio" value="Perempuan" required/>Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenjang</td><td>:</td><td>
+                        <!-- select adalah bagian dari form yang berfungsi untuk menerima inputan berupa pilihan yang hanya memilih salah satu saja -->
+                        <!-- tag name pada input berfungsi untuk menamai textbox yang kita buat -->
+                        <!-- required berfungsi agar form yang di required harus diisi -->
+                        <!-- value merupakan isi dari form yang kita pilih -->
+                        <!-- option adalah pilihan yang bisa ditampilkan di halaman html -->
+                        <select name="jenjang" required>
+                            <option value="">pilih jenjang</option>
+                            <option value="SMK">SMK</option>
+                            <option value="SMA">SMA</option>
+                            <option value="SMP">SMP</option>
+                            <option value="SD">SD</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Alamat</td><td>:</td><td>
+                        <!-- input type text adalah bagian dari form yang berfungsi untuk menerima inputan yang lebih banyak -->
+                        <!-- tag name pada input berfungsi untuk menamai textbox yang kita buat -->
+                        <!-- placeholder berfungsi untuk menampilkan penamaan -->
+                        <!-- required berfungsi agar form yang di required harus diisi -->
+                        <!-- cols berfungsi untuk mengatur panjang dari textarea -->
+                        <!-- rows berfungsi untuk mengatur lebar dari textarea yang kita buat -->
+                        <textarea name="alamat"  cols="30" rows="10" required placeholder="isi alamat anda"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- fungsi dari colspan adalah menggabungkan beberapa kolom menjadi satu kolom -->
+                    <td colspan="3">
+                        <!-- input type submit berfungsi untuk membuat button pada form. dan form tersebut dapat menjalan perintah dari user -->
+                        <!-- value berfungsi untuk memberi nilai pada button -->
+                        <input type="submit" value="Simpan">
+                    </td>
+                </tr>
+                
+            </table>
+            <!-- tutup tag table -->
+        </form>
+        <!-- tutup tag form -->
+    </body>
+    <!-- tutup tag body -->
+</html>
+<!-- tutup tag html -->
